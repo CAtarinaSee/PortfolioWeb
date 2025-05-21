@@ -16,7 +16,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              Let me<span className="purple"> Introduce </span> Myself
             </h1>
             <p className="home-about-body">
               I fell in love with programming and I have at least learnt
@@ -31,10 +31,7 @@ function Home2() {
               My field of Interest's are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                also in areas related to <b className="purple">Blockchain.</b>
               </i>
               <br />
               <br />
@@ -60,14 +57,12 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>Follow me!</h1>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/CAtarinaSee"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -76,18 +71,18 @@ function Home2() {
                 </a>
               </li>
               <li className="social-icons">
-                <a
+                {/* <a
                   href="https://twitter.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
+                </a> */}
+                {/* </li>
+              <li className="social-icons"> */}
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/catarina-seemann-45a9b1174/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +92,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/caatarinas_view/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
