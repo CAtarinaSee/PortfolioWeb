@@ -18,36 +18,23 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               Let me<span className="purple"> Introduce </span> Myself
             </h1>
-            {/* <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            <p className="home-about-body">
+              Now that I'm finishing the first year of my master's degree, I
+              finally feel like I've discovered where I want to go with my
+              career.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              I am a Communication and Web Technologies master student at
+              University of Aveiro, and have completed a Bachelors in Science
+              Communication from Lusófona University of Porto.
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to <b className="purple">Blockchain.</b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p> */}
+              I am passionate about the intersection of technology and
+              communication, and I am excited to explore how these fields can
+              work together to create innovative solutions.
+              <br />I am very excited to be starting my last year of university,
+              and I am looking forward to the opportunities that lie ahead. I am
+              eager to continue learning and growing in my field, and I am
+              excited to see where my career will take me.
+            </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -70,17 +57,8 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
-                {/* <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a> */}
-                {/* </li>
-              <li className="social-icons"> */}
                 <a
                   href="https://www.linkedin.com/in/catarina-seemann-45a9b1174/"
                   target="_blank"

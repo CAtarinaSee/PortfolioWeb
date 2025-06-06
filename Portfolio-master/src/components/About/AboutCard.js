@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+// import { ImPointRight } from "react-icons/im";
+import { BsBookmarkHeart } from "react-icons/bs";
 
 function AboutCard() {
   return (
@@ -8,33 +9,44 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, my name is{" "}
+            <span className="purple"> Catarina Seemann </span>
+            I'm from <span className="purple"> Porto, Portugal.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am currently a Communication and Web Technologies master student
+            at University of Aveiro.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            And have completed a Bachelors in Science Communication from
+            Lusófona University of Porto.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from website-ing, here are some other activities that I love
+            to do!
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <div
+            style={{ display: "flex", gap: "1.5rem", justifyContent: "center" }}
+          >
+            <div
+              className="about-activity"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <BsBookmarkHeart style={{ marginRight: "0.5rem" }} />
+              Learning new skills
+            </div>
+            <div
+              className="about-activity"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <BsBookmarkHeart style={{ marginRight: "0.5rem" }} /> Photography
+            </div>
+            <div
+              className="about-activity"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <BsBookmarkHeart style={{ marginRight: "0.5rem" }} /> Reading
+              Books
+            </div>
+          </div>
         </blockquote>
       </Card.Body>
     </Card>
