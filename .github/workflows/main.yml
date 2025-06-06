@@ -59,5 +59,4 @@ jobs:
         run: netlify link --id ${{ secrets.NETLIFY_SITE_ID }}
 
       - name: Deploy to Netlify
-      run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=Portfolio-master/build
-    
+        run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=Portfolio-master/build
