@@ -50,10 +50,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-output
-          path: Portfolio-master/build
+          path: build
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
-        run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=Portfolio-master/build --json
+        run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build --json
