@@ -50,6 +50,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-output
+          # downloads to the 'build' folder at the root of the runner
           path: build
 
       - name: Check build folder contents
