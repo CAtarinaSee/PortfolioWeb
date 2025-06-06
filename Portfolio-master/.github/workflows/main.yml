@@ -20,22 +20,25 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install --production
-        working-directory: Portfolio-master
+        run: |
+          cd Portfolio-master
+          npm install --production
 
       - name: Check Prettier Formatting
-        run: npx prettier --check .
-        working-directory: Portfolio-master
+        run: |
+          cd Portfolio-master
+          npx prettier --check .
 
       - name: Build Project (skip linting)
-        run: npm run build
-        working-directory: Portfolio-master
+        run: |
+          cd Portfolio-master
+          npm run build
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: Portfolio-master/out # Atualizado para refletir o caminho correto
+          path: Portfolio-master/out
 
   deploy:
     runs-on: ubuntu-latest
