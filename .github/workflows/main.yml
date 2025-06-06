@@ -3,7 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - "**"
+      - "main"
 
 jobs:
   build:
@@ -21,18 +21,18 @@ jobs:
           cache-dependency-path: Portfolio-master/package-lock.json
 
       - name: Install dependencies
-        run: npm install --production
+        run: npm install
         working-directory: Portfolio-master
 
-      - name: Check Prettier Formatting
+      - name: Format code with Prettier
         run: npx prettier --write .
         working-directory: Portfolio-master
 
-      - name: Build Project (skip linting)
+      - name: Build project
         run: CI=false npm run build
         working-directory: Portfolio-master
 
-      - name: Upload Build Artifacts
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-output
@@ -46,7 +46,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download Build Artifacts
+      - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: build-output
@@ -55,5 +55,8 @@ jobs:
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
+      - name: Link Netlify site (optional but helpful for clarity)
+        run: netlify link --id ${{ secrets.NETLIFY_SITE_ID }}
+
       - name: Deploy to Netlify
-        run: netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --dir Portfolio-master/build
+        run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --dir=Portfolio-master/build
