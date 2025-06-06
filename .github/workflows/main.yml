@@ -43,14 +43,10 @@ jobs:
     needs: build
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: build-output
-          # downloads to the 'build' folder at the root of the runner
           path: build
 
       - name: Check build folder contents
@@ -60,4 +56,4 @@ jobs:
         run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
-        run: npx netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --dir=build
+        run: netlify deploy --dir=build --prod --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}
