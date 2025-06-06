@@ -54,7 +54,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-output
-          path: pw-catarina/out
+          path: Portfolio-master/out
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
