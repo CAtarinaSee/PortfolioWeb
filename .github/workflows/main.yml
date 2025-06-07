@@ -40,19 +40,21 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # 🔧 NECESSÁRIO: checkout para acessar .git e estrutura
+        uses: actions/checkout@v4 # Mantido por segurança, caso seja necessário para metadados ou futuros comandos do Netlify CLI
 
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: build-output
-          path: build
+          path: build # Os ficheiros serão baixados para o diretório 'build' na raiz do runner
 
       - name: Show build output
-        run: ls -la build
+        run: ls -la build # Útil para depurar e confirmar que os ficheiros estão lá
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
+        # Este comando está correto. O problema era a ausência do netlify.toml que guia o Netlify
+        # para não tentar adivinhar o build.
         run: netlify deploy --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build
