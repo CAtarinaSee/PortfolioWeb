@@ -42,6 +42,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 # Mantido por segurança, caso seja necessário para metadados ou futuros comandos do Netlify CLI
 
+      - name: Verify netlify.toml presence
+        run: |
+          echo "Listing files in current directory (root of repo):"
+          ls -la .
+          echo "Content of netlify.toml (if found):"
+          cat netlify.toml || echo "netlify.toml not found or empty."
+          echo "Current working directory:"
+          pwd
+
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:

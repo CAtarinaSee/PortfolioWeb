@@ -1,3 +1,4 @@
 [build]
+
   publish = "Portfolio-master/build" # Onde os ficheiros finais estão após o build local
   command = "# npm run build"        # Desativa o comando de build no Netlify
