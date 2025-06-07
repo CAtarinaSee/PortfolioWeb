@@ -1,4 +1,4 @@
+# netlify.toml
 [build]
-
-  publish = "Portfolio-master/build" # Onde os ficheiros finais estão após o build local
-  command = "# npm run build"        # Desativa o comando de build no Netlify
+  publish = "Portfolio-master/build"  # Diz ao Netlify que a pasta a servir é Portfolio-master/build
+  command = "# npm run build"         # Comenta o comando de build para o Netlify não tentar construí-lo
