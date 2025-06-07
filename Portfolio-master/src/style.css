@@ -400,49 +400,6 @@ button:focus {
 }
 
 /* --------- */
-/* Footer */
-/* --------- */
-.footer {
-  background-color: rgb(24, 10, 52);
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
-}
-
-.footer-body {
-  z-index: 1;
-  text-align: center !important;
-}
-
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
-}
-
-.footer h3 {
-  font-size: 10 px;
-  color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
-.footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding: 0 !important;
-}
-
-/* .blockquote-footer {
-  color: #7aa0ff !important;
-} */
-/* --------- */
 /* Projects */
 /* --------- */
 .project-section {
