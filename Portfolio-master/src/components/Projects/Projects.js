@@ -26,7 +26,7 @@ function Projects() {
               imgPath={moodreads}
               isBlog={false}
               title="MoodReads"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="MoodReads was my first ever programming project and it was a challenge. This website offers personalized reading recommendations based on the user's answers to the MoodQuiz. Users can also search for their favorite books and films."
               ghLink="https://github.com/CAtarinaSee/MP1-Javascript"
               demoLink="https://moodreads.netlify.app/"
             />
@@ -37,7 +37,7 @@ function Projects() {
               imgPath={nasa}
               isBlog={false}
               title="Nasa Pictures Explore"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="This project is a React application that allows users to explore NASA's vast collection of images. It utilizes the NASA API to fetch data and display it in a user-friendly interface. Users can search for specific images, view details, and enjoy a seamless browsing experience. This was my first time with React and I learned a lot about components, state management, and API integration."
               ghLink="https://github.com/CAtarinaSee/MP2-React"
               demoLink="https://nasapicturesexplore.netlify.app/"
             />
@@ -48,7 +48,8 @@ function Projects() {
               imgPath={yu}
               isBlog={false}
               title="YU"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              description="YU is an app designed to help teens and pre-teens manage their screen time. It allows users to personalize their own YU using stars earned by completing tasks set by their partner.
+                YU has been my biggest project so far, and I am very proud of it. It was challenging, but I learned a lot throughout the process."
               ghLink="https://github.com/beatrizsfrodrigues/yu_cbl"
               demoLink="https://yu-mctw.vercel.app/"
             />
